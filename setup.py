@@ -17,12 +17,12 @@ def read_requirements(filename):
             if not line.startswith('#')]
 
 
-NAME = 'adslproxy'
+NAME = 'adslproxy-ota'
 FOLDER = 'adslproxy'
-DESCRIPTION = 'ADSL Proxy Pool Tool'
+DESCRIPTION = 'ADSL Proxy Pool Tool Forked from https://github.com/Python3WebSpider/ADSLProxy'
 URL = 'https://github.com/Python3WebSpider/ADSLProxy'
-EMAIL = 'cqc@cuiqingcai.com'
-AUTHOR = 'Germey'
+EMAIL = 'otaviolxh@outlook.com'
+AUTHOR = 'Otavio'
 REQUIRES_PYTHON = '>=3.5.0'
 VERSION = None
 

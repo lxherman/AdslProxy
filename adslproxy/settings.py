@@ -21,6 +21,8 @@ REDIS_HOST = env.str('REDIS_HOST', 'localhost')
 REDIS_PASSWORD = env.str('REDIS_PASSWORD', 'foobared')
 # Redis数据库端口
 REDIS_PORT = env.int('REDIS_PORT', 6379)
+# Redis数据库索引
+REDIS_DB = env.int('REDIS_DB', 0)
 # 代理池键名
 REDIS_KEY = env.str('REDIS_KEY', 'adsl')
 

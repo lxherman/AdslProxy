@@ -5,7 +5,7 @@ from adslproxy.settings import *
 
 
 class RedisClient(object):
-    def __init__(self, host=REDIS_HOST, port=REDIS_PORT, password=REDIS_PASSWORD, redis_key=REDIS_KEY):
+    def __init__(self, host=REDIS_HOST, port=REDIS_PORT,db=REDIS_DB, password=REDIS_PASSWORD, redis_key=REDIS_KEY):
         """
         初始化Redis连接
         :param host: Redis 地址
@@ -13,7 +13,7 @@ class RedisClient(object):
         :param password: Redis 密码
         :param redis_key: Redis 哈希表名
         """
-        self.db = redis.StrictRedis(host=host, port=port, password=password, decode_responses=True)
+        self.db = redis.StrictRedis(host=host, port=port,db=db, password=password, decode_responses=True)
         self.redis_key = redis_key
     
     def set(self, name, proxy):

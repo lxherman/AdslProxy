@@ -20,7 +20,7 @@ def read_requirements(filename):
 NAME = 'adslproxy-ota'
 FOLDER = 'adslproxy'
 DESCRIPTION = 'ADSL Proxy Pool Tool Forked from https://github.com/Python3WebSpider/ADSLProxy'
-URL = 'https://github.com/Python3WebSpider/ADSLProxy'
+URL = 'https://github.com/lxherman/AdslProxy'
 EMAIL = 'otaviolxh@outlook.com'
 AUTHOR = 'Otavio'
 REQUIRES_PYTHON = '>=3.5.0'
@@ -59,18 +59,18 @@ def package_files(directories):
 class UploadCommand(Command):
     description = 'Build and publish the package.'
     user_options = []
-    
+
     @staticmethod
     def status(s):
         """Prints things in bold."""
         print('\033[1m{0}\033[0m'.format(s))
-    
+
     def initialize_options(self):
         pass
-    
+
     def finalize_options(self):
         pass
-    
+
     def run(self):
         try:
             self.status('Removing previous builds…')

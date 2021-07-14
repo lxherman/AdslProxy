@@ -7,7 +7,7 @@
 ### 安装 ADSLProxy
 
 ```
-pip3 install -U adslproxy
+pip3 install -U adslproxy-ota
 ```
 
 ### 设置环境变量
